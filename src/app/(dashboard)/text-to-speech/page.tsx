@@ -12,7 +12,6 @@ export default async function TextToSpeechPage({
   const { text, voiceId } = await searchParams;
 
   prefetch(trpc.voices.getAll.queryOptions());
-  
 
   return (
     <HydrateClient>
